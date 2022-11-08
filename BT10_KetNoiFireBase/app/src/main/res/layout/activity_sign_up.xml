@@ -29,7 +29,7 @@
     <RelativeLayout
         android:id="@+id/rl1"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="400dp"
         android:layout_below="@+id/tvlogin"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
@@ -42,11 +42,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="40dp"
-            android:paddingTop="70dp"
+            android:paddingTop="40dp"
             android:text="Sign Up"
             android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold" />
+
         <EditText
             android:id="@+id/edtfullname"
             android:layout_width="320dp"
@@ -87,7 +88,7 @@
             android:paddingLeft="15dp" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btlogin"
+            android:id="@+id/btsignup"
             android:layout_width="320dp"
             android:layout_height="50dp"
             android:layout_below="@+id/edtpass"
@@ -109,10 +110,10 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/loginnow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvyet"
-        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Login Now"
         android:textColor="@color/limegreen"
