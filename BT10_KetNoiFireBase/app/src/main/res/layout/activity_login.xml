@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:id="@+id/tvwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingLeft="30dp"
+        android:paddingTop="40dp"
+        />
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_below="@+id/tvwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login back into your account "
+        android:textSize="22sp"
+        android:paddingLeft="30dp"
+        />
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_below="@+id/tvlogin"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:background="@drawable/bg"
+        android:layout_margin="20dp"
+        >
+
+        <TextView
+            android:id="@+id/tvlg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingTop="70dp"
+            android:text="Log In"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtemail"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvlg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/border"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:paddingLeft="15dp" />
+
+        <EditText
+            android:id="@+id/edtpass"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/edtemail"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:hint="Pass word"
+            android:drawableStart="@drawable/ic_baseline_enhanced_encryption_24"
+            android:paddingLeft="15dp"
+            android:drawablePadding="15dp"/>
+
+        <TextView
+            android:id="@+id/tvforgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtpass"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:gravity="right"
+            android:text="Forgot password?"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btlogin"
+            android:layout_below="@+id/tvforgot"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="LOGIN"
+            android:textSize="22sp"
+            android:background="@drawable/border_button"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvyet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Don't have an account yet? "
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvyet"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Register Now "
+        android:textSize="20sp"
+        android:textColor="@color/limegreen"/>
+
+
+</RelativeLayout>
